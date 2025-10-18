@@ -1,0 +1,6 @@
+{
+   "rewrites": [
+      {"source": "/Stage0/(.*)", "destination": "/Stage0/$1" }
+      
+   ]
+}
