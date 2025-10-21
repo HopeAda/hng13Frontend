@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="styles.css">
+   <title>Contact Me</title>
+</head>
+<body>
+   <section class="nav-links">
+      <nav>
+         <a href="./index.html">Home</a>
+         <a href="./about.html">About</a>
+         <a href="#" class="active">Contact</a>
+      </nav>
+   </section>
+
+   <section class="success-msg card" data-testid="test-contact-success">
+      Thank you! Your message has been received 😊
+   </section>
+
+   <main class="contact-card card" data-testid="test-contact-page">
+      <h1>Contact Me</h1>
+      <form>
+         <section class="form-group">
+            <div class="form-name">
+               <label for="full-name">Full Name</label>
+               <input type="text" id="full-name" data-testid="test-contact-name" aria-describedby="name-error">
+               <span class="name-error error" data-testid="test-contact-error-full-name" id="name-error">
+                  This field is required
+               </span>
+            </div>
+            <div class="form-email">
+               <label for="email">Email</label>
+               <input type="email" id="email" data-testid="test-contact-email" aria-describedby="email-error">
+               <span class="email-error error" data-testid="test-contact-error-email" id="email-error">This field is required</span>
+            </div>
+         </section>
+         <div class="form-subject">
+            <label for="subject">Subject of message</label>
+            <input type="text" data-testid="test-contact-subject" id="subject" aria-describedby="subject-error">
+            <span class="error subject-error" data-testid="test-contact-error-subject" id="subject-error">This field is required</span>
+         </div>
+         <div class="form-message">
+            <label for="message">Your message</label>
+            <textarea name="" id="message" data-testid="test-contact-message" aria-describedby="message-error"></textarea>
+            <span class="error message-error" data-testid="test-contact-error-message" id="message-error">This field is required</span>
+         </div>
+         <input type="submit" value="Submit" id="submit" data-testid="test-contact-submit">
+
+      </form>
+   </main>
+
+   <script src="scripts.js"></script>
+</body>
+</html>
